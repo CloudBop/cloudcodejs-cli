@@ -5,7 +5,7 @@ import { serve } from "@cloudcodejs/local-api";
 /**
  * crucial, (endUserConsumer === production) || (undefined === "development")
  */
-const isProduction = process.env.NODE === "production";
+const isProduction = process.env.NODE_ENV === "production";
 
 export const serveCommand = new Command()
   // [square-brckets-optional]
